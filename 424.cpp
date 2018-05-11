@@ -17,7 +17,7 @@ public:
                 dmax = d[s[i] - 'A'];
                 dloc = s[i] - 'A';
             }
-            while(length - dmax > k)
+            if(length - dmax > k)
             {
                 d[s[i - length + 1] - 'A'] -= 1;
                 length -= 1;
